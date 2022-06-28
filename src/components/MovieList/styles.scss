@@ -1,0 +1,94 @@
+// these styles are localised to the components inside this folder
+// mostly used for layouts etc.
+
+.divider {
+  &-sm {
+    @apply my-1;
+  }
+
+  &-md {
+    @apply my-3;
+  }
+}
+
+.movie-list-container {
+  @apply flex flex-col gap-1;
+}
+
+.list-wrapper {
+  @apply flex flex-col gap-4;
+}
+
+.empty-state {
+  @apply bg-slate-800 rounded-md p-10 text-center;
+}
+
+.movie-item {
+  @apply bg-gray-800 bg-opacity-70;
+  @apply md:flex md:flex-row rounded-md overflow-hidden;
+  @apply cursor-pointer hover:scale-105 duration-200;
+  @apply hover:shadow-md hover:shadow-cyan-600;
+
+  .summary {
+    @apply flex flex-col gap-2 p-3;
+    .subtitle {
+      span {
+        @apply mr-2;
+      }
+    }
+  }
+
+  img {
+    @apply w-full h-auto;
+    @apply md:w-auto md:h-auto;
+  }
+}
+
+.placeholder-movie {
+  @apply bg-slate-800 animate-pulse;
+  @apply h-80 w-full rounded-md;
+}
+
+.movie-modal-content {
+  @apply bg-slate-900 rounded-md text-white;
+  @apply md:flex md:flex-row gap-1;
+
+  width: 80vw;
+  height: 80vh;
+  position: absolute;
+  overflow-y: scroll;
+  top: 10vh;
+  left: 10vw;
+  img {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 60vw;
+    height: 70vh;
+    position: absolute;
+    top: 15vh;
+    left: 20vw;
+    img {
+      width: auto;
+    }
+  }
+
+  .details {
+    @apply md:text-2xl md:font-semibold p-2;
+    @apply flex flex-col gap-2 w-full;
+    span {
+      @apply mr-2;
+    }
+
+    .description {
+      @apply md:text-lg md:font-medium my-2;
+    }
+  }
+}
+
+.placeholder-details {
+  @apply bg-slate-800 animate-pulse;
+  @apply w-full rounded-md;
+  @apply h-40;
+}

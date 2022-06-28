@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./layouts";
+@import "./typography";
+@import "./colours";
+@import "./inputs";
+@import "./animations";
+
+#root {
+  @apply bg-slate-800;
+}

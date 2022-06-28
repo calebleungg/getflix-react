@@ -1,0 +1,7 @@
+.search-container {
+  @apply flex flex-row items-center gap-1 relative;
+
+  .emoji {
+    @apply absolute right-4;
+  }
+}

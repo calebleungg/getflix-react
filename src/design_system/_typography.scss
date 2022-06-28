@@ -1,0 +1,12 @@
+.title {
+  @apply text-3xl;
+  @apply 2xl:text-4xl font-extrabold;
+}
+
+.subtitle {
+  @apply text-2xl font-extrabold;
+}
+
+.content {
+  @apply text-xl font-semibold;
+}
