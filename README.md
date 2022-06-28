@@ -24,7 +24,7 @@ Thank you for the exercise, it was a fun one to do! A few notes below, I'll try 
 *My node version is `v16.14.0`
 
 1. Install dependencies via `npm install`
-2. Run the application via `npm start`
+2. Run the application via `npm start`. App should be available via `localhost:8080`
 <br/><br/>
 
 ### Chosen Technologies
